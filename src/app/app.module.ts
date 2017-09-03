@@ -7,7 +7,7 @@ import { NavComponent }  from './navigation.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ NavComponent, AppComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ AppComponent, NavComponent ],
+  bootstrap:    [ AppComponent, NavComponent ]
 })
 export class AppModule { }
