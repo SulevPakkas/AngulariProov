@@ -6,8 +6,8 @@
             </button>
             <a class="navbar-brand" href="#"> Navigation </a>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav" *ngFor="let nav of navs">
-                    <li>
+                <ul class="navbar-nav">
+                    <li *ngFor="let nav of navs">
                         <div>
                             <a href="{{nav.link}}" class="nav-link">{{nav.name}}</a>
                         </div>
