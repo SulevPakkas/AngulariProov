@@ -1,13 +1,19 @@
 <div class="row">
-    <div class="col-md-12 col-sm-12">
+    <div class="col-md-12 col-sm-12 col-lg-12">
         <nav id="mainMenu" class="navbar navbar-toggleable-sm navbar-fixed-top navbar-inverse bg-inverse">
-            <ul class="navbar-nav" *ngFor="let nav of navs">
-                <li>
-                    <div>
-                        <a href="{{nav.link}}" class="nav-link">{{nav.name}}</a>
-                    </div>
-                </li>
-            </ul>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"> Logo </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" *ngFor="let nav of navs">
+                    <li>
+                        <div>
+                            <a href="{{nav.link}}" class="nav-link">{{nav.name}}</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 </div>
